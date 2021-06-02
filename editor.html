@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>SSML Editor </title>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="undefined" crossorigin="anonymous">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="./app.css" type="text/css">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<div class="main-div">
+    <div class="left-pane">
+        <div class="left-side">
+            <i class="far fa-image" style="font-size:128px;position:absolute;bottom:0px;left:20%"></i>
+        </div>
+        <div class="left-side">
+            <i class="fas fa-text-width" style="font-size:128px;position:absolute;bottom:0px;left:20%"></i>
+        </div>
+        <div class="left-side">
+            <i class="far fa-square" style="font-size:128px;position:absolute;bottom:0px;left:20%"></i>
+        </div>
+        <div class="left-side">
+            <i class="far fa-question-circle" style="font-size:128px;position:absolute;bottom:0px;left:20%"></i>
+    </div>
+    
+
+    </div>
+    <div class="right-pane">
+        <h1 class="heading">Add speech tags</h1>
+        <button class="button" onclick="converttotag('emphasis')" style="color:purple;margin-left:5%">Emphasis</button>
+        <button class="button" onclick="converttotag('slow')" style="color:green">slow</button>
+        <button class="button" onclick="converttotag('fast')" style="color:blue">fast</button>
+        
+        
+<div class="drp-grp btn-group">
+    <button type="button" class="drp-down btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="far fa-clock"></i> Add delay
+    </button>
+    <ul class="drp-ul dropdown-menu">
+      <li><button class="drp-a dropdown-item" onclick="insertbreak(this)">0.25s<i class="fas fa-plus-circle" style="float:right;color:blue"></i></button></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><button class="drp-a dropdown-item" onclick="insertbreak(this)">0.5s<i class="fas fa-plus-circle" style="float:right;color:blue"></i></button></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><button class="drp-a dropdown-item" onclick="insertbreak(this)">1s<i class="fas fa-plus-circle" style="float:right;color:blue"></i></button></li>
+    </ul>
+  </div>
+
+
+        <div class="editor" contenteditable="true"></div>
+        <p class="inside-editor"><i class="fas fa-info-circle" style="margin-right:4px"></i>Max 460 Characters </p>
+        <button class="getssml action-button" data-action="ssml.actions.convertToSsml()">Console SSMl</button>
+    </div>
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="./editor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* CSS RESET */
+
+html{
+    height:100%;
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+body {
+    background-color:WHITE;
+    font-size: 14px;
+    line-height: 18px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    color: #333;
+    height:100%;
+    width:100%;
+}
+
+.main-div{
+    
+    height: 100%;
+    width:100%;
+}
+
+.left-pane{
+    height:100%;
+    width:10%;
+    border-right:2px solid blue;
+    display:inline-block;
+}
+
+.left-side{
+    height:20%;
+    width:100%;
+    position:relative;
+}
+
+.right-pane{
+    height:100%;
+    width: 89%;
+    float:right;
+    display:inline;
+}
+
+.heading{
+    margin-left:5%;
+    margin-top:2%;
+}
+
+.button{
+    font-size:32px;
+    background-color:transparent;
+    border:2px dashed;
+    border-radius:30px 30px 30px 30px;
+    display:inline;
+    margin-left:1%;
+    padding:10px;
+}
+
+.editor{
+    border:2px solid black;
+    margin-left: 5%;
+    margin-top:2%;
+    height:80%;
+    width:90%;
+    border-radius:20px 20px 20px 20px;
+    padding:30px;
+    font-size:32px;
+    line-height:45px;
+}
+
+.drp-down{
+    border-radius:30px 30px 30px 30px;
+    background-color:transparent;
+    font-size:32px;
+    padding:5px;
+    padding-left:10px;
+    color:black;
+    border:1px solid black;
+}
+
+.drp-grp{
+    float:right;
+    margin-left:1px;
+    display:inline;
+    margin-right:5%
+
+}
+
+.inside-editor{
+    z-index:100;
+    position:relative;
+    margin-left:7%;
+    top:-5%;
+    font-size:32px;
+    color:blue;
+}
+
+.editor .emphasis{
+    font-size:32px;
+    background-color:purple;
+    border:0px;
+    border-radius:30px 30px 30px 30px;
+    margin-left:1%;
+    padding:10px;
+    color:white;
+
+}
+
+.editor .slow{
+    font-size:32px;
+    background-color:green;
+    border:0px;
+    border-radius:30px 30px 30px 30px;
+    margin-left:1%;
+    padding:10px;
+    color:white;
+
+}
+
+.editor .fast{
+    font-size:32px;
+    background-color:blue;
+    border:0px;
+    border-radius:30px 30px 30px 30px;
+    margin-left:1%;
+    padding:10px;
+    color:white;
+
+}
+
+.getssml{
+
+}
+
+.emphasis>.inside-icon{
+    font-size:0px;
+}
+
+.emphasis:hover>.inside-icon{
+    font-size:32px;
+}
+
+.slow>.inside-icon{
+    font-size:0px;
+}
+
+.slow:hover>.inside-icon{
+    font-size:32px;
+}
+
+.fast>.inside-icon{
+    font-size:0px;
+}
+
+.fast:hover>.inside-icon{
+    font-size:32px;
+}
+
+.drp-ul{
+    height:200px;
+    width:300px;
+}
+
+.drp-a{
+    font-size:32px;
+    margin-bottom:10px;
+    margin-top:10px
+}
+
+
+
+
